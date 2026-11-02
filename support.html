@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Support – Jordemoder PA</title>
+<meta name="description" content="Hjælp til iPhone-appen Jordemoder PA: sådan virker den, hvad den koster, og svar på de mest almindelige spørgsmål.">
+<style>
+  :root {
+    --bg: #f5f5f7;
+    --card: #ffffff;
+    --text: #1d1d1f;
+    --muted: #6e6e73;
+    --line: #e5e5ea;
+    --accent: #5b5bd6;
+    --accent-soft: #ececfb;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #000000;
+      --card: #1c1c1e;
+      --text: #f5f5f7;
+      --muted: #a1a1a6;
+      --line: #2c2c2e;
+      --accent: #8e8cf5;
+      --accent-soft: #26264a;
+    }
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; scroll-behavior: smooth; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font: 17px/1.65 -apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue", Arial, sans-serif;
+  }
+  header {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 56px 24px 8px;
+  }
+  .badge {
+    display: inline-block;
+    padding: 4px 12px;
+    border-radius: 999px;
+    background: var(--accent-soft);
+    color: var(--accent);
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: .01em;
+  }
+  h1 {
+    margin: 16px 0 8px;
+    font-size: clamp(30px, 6vw, 42px);
+    line-height: 1.12;
+    letter-spacing: -.02em;
+  }
+  .lead { color: var(--muted); font-size: 19px; line-height: 1.5; margin: 0; }
+  nav {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 20px 24px 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+  nav a {
+    padding: 6px 14px;
+    border-radius: 999px;
+    background: var(--card);
+    border: 1px solid var(--line);
+    font-size: 15px;
+    color: var(--text);
+  }
+  nav a:hover { border-color: var(--accent); color: var(--accent); }
+  main {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 24px 24px 72px;
+  }
+  section {
+    background: var(--card);
+    border-radius: 18px;
+    padding: 22px 24px;
+    margin-bottom: 14px;
+    border: 1px solid var(--line);
+    scroll-margin-top: 16px;
+  }
+  .highlight {
+    background: var(--accent-soft);
+    border-color: transparent;
+  }
+  h2 {
+    margin: 0 0 10px;
+    font-size: 20px;
+    letter-spacing: -.01em;
+  }
+  h3 { margin: 18px 0 4px; font-size: 17px; }
+  p { margin: 0 0 12px; }
+  p:last-child, ul:last-child, ol:last-child { margin-bottom: 0; }
+  ul, ol { margin: 0; padding-left: 22px; }
+  li { margin: 8px 0; padding-left: 4px; }
+  li::marker { color: var(--accent); font-weight: 600; }
+  a { color: var(--accent); text-decoration: none; border-bottom: 1px solid transparent; }
+  a:hover { border-bottom-color: currentColor; }
+  nav a, nav a:hover { border-bottom: 1px solid var(--line); }
+  nav a:hover { border-color: var(--accent); }
+  .price {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin: 4px 0 14px;
+  }
+  .price div {
+    flex: 1 1 200px;
+    padding: 16px 18px;
+    border-radius: 14px;
+    background: var(--card);
+    border: 1px solid var(--line);
+  }
+  .price strong { display: block; font-size: 22px; letter-spacing: -.01em; }
+  .price span { color: var(--muted); font-size: 15px; }
+  table { width: 100%; border-collapse: collapse; font-size: 16px; }
+  th, td { text-align: left; padding: 10px 8px; border-bottom: 1px solid var(--line); vertical-align: top; }
+  th { color: var(--muted); font-weight: 600; font-size: 14px; }
+  tr:last-child td { border-bottom: 0; }
+  details { border-top: 1px solid var(--line); padding: 12px 0; }
+  details:first-of-type { border-top: 0; padding-top: 0; }
+  details:last-child { padding-bottom: 0; }
+  summary { cursor: pointer; font-weight: 600; list-style: none; }
+  summary::-webkit-details-marker { display: none; }
+  summary::before { content: "+"; display: inline-block; width: 20px; color: var(--accent); font-weight: 700; }
+  details[open] summary::before { content: "–"; }
+  details p { margin: 8px 0 0 20px; color: var(--muted); }
+  address { font-style: normal; }
+  footer {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 0 24px 56px;
+    color: var(--muted);
+    font-size: 14px;
+  }
+  @media (max-width: 520px) {
+    body { font-size: 16px; }
+    header { padding-top: 40px; }
+    section { padding: 18px 18px; border-radius: 16px; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <span class="badge">Jordemoder PA</span>
+  <h1>Support</h1>
+  <p class="lead">Optag møder og samtaler, få dem skrevet ud på dansk, og få et resumé. Alt sker på din iPhone.</p>
+</header>
+
+<nav>
+  <a href="#sadan-virker-det">Sådan virker det</a>
+  <a href="#funktioner">Funktioner</a>
+  <a href="#pris">Pris og prøve</a>
+  <a href="#krav">Krav</a>
+  <a href="#sporgsmal">Spørgsmål</a>
+  <a href="#kontakt">Kontakt</a>
+</nav>
+
+<main>
+
+  <section id="sadan-virker-det">
+    <h2>Sådan virker det</h2>
+    <ol>
+      <li><strong>Optag.</strong> Giv evt. mødet et navn, vælg antal talere, og tryk på den røde knap. Optagelsen fortsætter, selvom skærmen låses.</li>
+      <li><strong>Transskribér.</strong> Tryk på Stop, og åbn mødet. Tryk på Transskribér, så skriver appen samtalen ud på dansk.</li>
+      <li><strong>Navngiv talerne.</strong> Skriv navnene under Talere, så står transskriptionen med navn og tekst for hver person.</li>
+      <li><strong>Få et resumé.</strong> Under Spørg om dette møde kan du vælge resumé, action items, beslutninger, eller skrive dit eget spørgsmål.</li>
+      <li><strong>Del.</strong> Send transskription, resumé eller selve lydfilen på mail, med AirDrop eller via andre apps.</li>
+    </ol>
+  </section>
+
+  <section id="funktioner">
+    <h2>Funktioner</h2>
+    <ul>
+      <li><strong>Optagelse</strong> af møder og samtaler, også med skærmen låst.</li>
+      <li><strong>Transskription</strong> af dansk tale til tekst. Du vælger mellem en hurtig og en præcis model.</li>
+      <li><strong>Flere talere.</strong> Appen skelner mellem talerne, og du navngiver dem bagefter. Navnene gælder hele transskriptionen.</li>
+      <li><strong>Ret talere sætning for sætning,</strong> hvis en sætning er tildelt den forkerte person.</li>
+      <li><strong>Resumé, action items og beslutninger</strong> samt egne spørgsmål om mødet, skrevet på dansk.</li>
+      <li><strong>Bibliotek</strong> med alle tidligere møder, som du kan omdøbe, åbne igen og slette.</li>
+      <li><strong>Deling</strong> af transskription, resumé og lydfil.</li>
+      <li><strong>Privat.</strong> Optagelser og tekster bliver på din telefon. Se <a href="index.html">privatlivspolitikken</a>.</li>
+    </ul>
+  </section>
+
+  <section id="pris" class="highlight">
+    <h2>Pris og gratis prøve</h2>
+    <p>Appen er gratis at hente og prøve. Du betaler først, når du vil fortsætte.</p>
+    <div class="price">
+      <div><strong>7 dage gratis</strong><span>Fuld adgang fra den dag, du henter appen.</span></div>
+      <div><strong>99 kr, én gang</strong><span>Ingen abonnement. Ingen fornyelse.</span></div>
+    </div>
+    <table>
+      <thead><tr><th>Funktion</th><th>Efter prøveperioden</th></tr></thead>
+      <tbody>
+        <tr><td>Optagelse af møder</td><td>Altid gratis</td></tr>
+        <tr><td>Bibliotek og tidligere transskriptioner</td><td>Altid gratis</td></tr>
+        <tr><td>Deling og afspilning af optagelser</td><td>Altid gratis</td></tr>
+        <tr><td>Ny transskription</td><td>Kræver engangskøbet</td></tr>
+        <tr><td>Resumé, action items og spørgsmål</td><td>Kræver engangskøbet</td></tr>
+      </tbody>
+    </table>
+    <h3>Sådan låser du op</h3>
+    <p>Åbn et møde og tryk på Transskribér, eller gå til tandhjulet og vælg <em>Lås op</em>. Købet går gennem din Apple-konto. Prisen vises i appen og kan variere lidt fra land til land.</p>
+    <h3>Skifter du telefon, eller har du hentet appen igen?</h3>
+    <p>Åbn tandhjulet og tryk på <em>Gendan køb</em>. Så får du adgang igen uden at betale en ekstra gang. Du skal bruge samme Apple-konto.</p>
+    <h3>Refusion</h3>
+    <p>Køb og refusion håndteres af Apple. Du kan bede om refusion på <a href="https://reportaproblem.apple.com">reportaproblem.apple.com</a>.</p>
+  </section>
+
+  <section id="krav">
+    <h2>Krav og godt at vide</h2>
+    <ul>
+      <li><strong>iPhone med iOS 26</strong> eller nyere.</li>
+      <li><strong>Resumé og opgaver</strong> kræver Apple Intelligence (iPhone 15 Pro eller nyere) med dansk understøttelse slået til. Optagelse og transskription virker også uden.</li>
+      <li><strong>Første gang du transskriberer,</strong> hentes en talemodel til din telefon. Den præcise model fylder cirka 632 MB og den hurtige cirka 216 MB, så brug gerne wifi. Derefter virker transskription uden internet.</li>
+      <li><strong>Lange optagelser</strong> tager tid og bruger batteri. Lad telefonen være tændt og appen åben, mens den arbejder.</li>
+      <li><strong>Tjek altid resultatet.</strong> Transskription og resumé kan indeholde fejl.</li>
+      <li><strong>Ikke et medicinsk produkt.</strong> Jordemoder PA er et notathjælpemiddel og må ikke bruges til at stille diagnoser eller træffe behandlingsbeslutninger.</li>
+      <li><strong>Optag med samtykke.</strong> Sørg for, at dem der er med på optagelsen, ved det, og følg din arbejdsgivers regler. Gælder optagelsen sundhedsoplysninger, skal du dele den sikkert.</li>
+    </ul>
+  </section>
+
+  <section id="sporgsmal">
+    <h2>Spørgsmål og svar</h2>
+
+    <details>
+      <summary>Transskriptionen går i gang, men står stille</summary>
+      <p>Første gang hentes talemodellen, og det kan tage nogle minutter. Tjek, at du har internet og nok plads. Lad appen være åben, indtil den er færdig.</p>
+    </details>
+
+    <details>
+      <summary>Appen skelner ikke mellem talerne</summary>
+      <p>Det kan ske, hvis stemmerne ligner hinanden, eller lyden er dårlig. Åbn mødet, vælg <em>Ret talere sætning for sætning</em>, og tryk på den rigtige person ved hver sætning. Hjælper det ikke, kan du angive det rigtige antal talere, før du optager.</p>
+    </details>
+
+    <details>
+      <summary>Jeg kan ikke lave et resumé</summary>
+      <p>Resumé kræver Apple Intelligence med dansk. Gå til Indstillinger på din iPhone og tjek, at Apple Intelligence er slået til. I appens indstillinger kan du se, om resumé er klar på din telefon. Hvis din prøveperiode er slut, skal du først låse op.</p>
+    </details>
+
+    <details>
+      <summary>Min prøveperiode er slut. Er mine optagelser væk?</summary>
+      <p>Nej. Dine optagelser og tidligere transskriptioner er der stadig, og du kan åbne, dele og slette dem. Du skal kun låse op for at lave nye transskriptioner og resuméer.</p>
+    </details>
+
+    <details>
+      <summary>Hvordan sletter jeg et møde?</summary>
+      <p>Gå til Bibliotek, og stryg mødet mod venstre. Så slettes både optagelsen og teksten fra telefonen. Det kan ikke fortrydes.</p>
+    </details>
+
+    <details>
+      <summary>Kan jeg flytte mine møder til en ny telefon?</summary>
+      <p>Mødene gemmes kun i appen på din telefon. De følger med, hvis du gendanner en sikkerhedskopi af hele telefonen. Del vigtige transskriptioner og optagelser, så du har en kopi.</p>
+    </details>
+
+    <details>
+      <summary>Hvor sendes min lyd hen?</summary>
+      <p>Ingen steder. Optagelse, transskription og resumé foregår på din iPhone. Appen henter kun talemodellen fra en ekstern server første gang, uden at sende dine optagelser eller tekster. Læs mere i <a href="index.html">privatlivspolitikken</a>.</p>
+    </details>
+
+    <details>
+      <summary>Hvordan afbryder jeg eller får pengene tilbage?</summary>
+      <p>Der er intet abonnement at afbryde. Købet er et engangskøb. Refusion søger du hos Apple på <a href="https://reportaproblem.apple.com">reportaproblem.apple.com</a>.</p>
+    </details>
+  </section>
+
+  <section id="kontakt">
+    <h2>Kontakt</h2>
+    <p>Fandt du ikke svar, eller har du en fejl eller et ønske? Skriv til <a href="mailto:clementhermansen@gmail.com">clementhermansen@gmail.com</a>. Skriv gerne, hvilken iPhone og iOS-version du bruger, og hvad der skete, så kan vi hjælpe hurtigere.</p>
+    <address style="margin-top:12px">
+      Hermansen 1973 ApS<br>
+      Sauntesvej 13A, 1<br>
+      2820 Gentofte
+    </address>
+  </section>
+
+</main>
+
+<footer>© 2026 Hermansen 1973 ApS · <a href="index.html">Privatlivspolitik</a> · <a href="licenser.html">Licenser</a></footer>
+
+</body>
+</html>
